@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React  from 'react';
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -15,7 +15,7 @@ import Login from './pages/Login'
 
 // Functional component to encapsulate state
 function App() {
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = React.useState("");
 
   // Create BrowserRouter within the functional component
   const router = createBrowserRouter(
